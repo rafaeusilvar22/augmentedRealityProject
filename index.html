@@ -1,44 +1,70 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realidade Aumentada</title>
+    <style>
+      body {
+        background-color: rgb(26, 24, 24);
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-align: center;
+      }
+      body a {
+        text-decoration: none;
+        font-weight: 700;
+        background-color: #dbd814;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+
+      body a:hover {
+        background-color: #fff;
+        color: rgb(26, 24, 24);
+      }
+      article p {
+        font-size: 0.9rem;
+        margin: 0 5%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        article img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <a-scene stats mindar-image="imageTargetSrc: files_mind/teste.mind;" 
-      color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
-      vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
-      mindar-image="filterMinCF:0.1; filterBeta: 3" cursor="rayOrigin:mouse"
-    >
-      <a-assets>
-        <a-asset-item id="minecraft" src="files_glb/herobrine_minecraft.glb"></a-asset-item>
-        <audio id="mineAudio" crossorigin="anonymous" src="Volume Alpha 03. Subwoofer Lullaby.mp3"></audio>
-        <img id="IconLinkdin" src="linkedin.png"/>
-        <a-asset-item id="deckUno" src="files_glb/uno_cards_3d.glb">
-        </a-asset-item>
-      </a-assets>
-
-      <a-camera position="0 0 0" look-controls="enabled: false"
-        cursor="fuse: false; rayOrigin: mouse;"
-        raycaster=" far:10000; objects: .clickable;"
-      >
-      </a-camera>
-  
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="3 3 3" src="#deckUno" animation-mixer>
-      </a-entity>
-      
-      <a-entity mindar-image-target="targetIndex: 1">
-          <a-gltf-model sound="src: #mineAudio; on: click" rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#minecraft" animation-mixer>
-          <a-image  id="linkedin" class="clickable" position="0 13.810 0" height="0.30"
-            width="0.30" scale="4.2 4.2 4.2" src="#IconLinkdin"
-            animation="property: scale; to: 1.5 1.5 1.5; easing: easeOutQuad; loop: true; dir: alternate"
-          >
-          </a-image>
-      </a-entity>
-    </a-scene>
+    <main>
+      <h3>Projeto com Realidade Aumentada</h3>
+      <article>
+        <img
+          src="images/tablet_com_realidade_aumentada.webp"
+          height="auto"
+          width="50%"
+          alt=""
+        />
+        <h4>O que é a realidade aumentada?</h4>
+        <p>
+          A realidade aumentada (RA ou AR) é a integração de elementos virtuais
+          em cenas do mundo real, em geral por meio de câmeras e sensores de
+          movimento. O recurso tem sido usada com frequência em aplicativos de
+          redes sociais, com os filtros do Instagram e jogos como o Pokémon GO.
+          A tecnologia também pode ser utilizada para fins educacionais e
+          profissionais, em áreas como design de produtos, marketing e
+          engenharia. Com ela, é possível visualizar objetos tridimensionais no
+          mundo real, em geral a partir de telas, como as do celular, ou com
+          óculos translúcidos de RA. Ou seja, a realidade aumentada é uma
+          experiência interativa do mundo real.
+        </p>
+        <br />
+        <a href="augmentedReality.html">Acessar câmera</a>
+      </article>
+    </main>
   </body>
 </html>
