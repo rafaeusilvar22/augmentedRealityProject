@@ -8,7 +8,7 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <a-scene stats mindar-image="imageTargetSrc: files_mind/teste.mind;" 
+    <a-scene stats mindar-image="imageTargetSrc: files_mind/medicamento_generico.mind;" 
       color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
       mindar-image="filterMinCF:0.001; filterBeta: 500; missTolerance: 3" cursor="rayOrigin:mouse"
@@ -60,6 +60,14 @@
             src="#iconPharmacy"
         >
         </a-image>
+        <a-text  
+            visible="false"
+            id="textStorePharmacy"
+            value="Farmacia online"
+            width="0.03" 
+            position="-0.004 0.011 0"
+        >
+        </a-text>
         <a-image 
             id="btnInformation"
             rotation="0 0 0 "
@@ -74,7 +82,7 @@
         <a-text  
             id="about" 
             class="clickable" 
-            width="0.05" position="-0.020 -0.015 0"
+            width="0.03" position="-0.020 -0.015 0"
         >
         </a-text>
 

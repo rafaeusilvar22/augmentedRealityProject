@@ -6,19 +6,22 @@
 // });
 
 let btnInformation = document.querySelector("#btnInformation");
-let example = document.querySelector("#about");
+let textAbout = document.querySelector("#about");
 let btnStorePharmacy = document.querySelector("#storePharmacy");
+let textStorePharmacy = document.querySelector('#textStorePharmacy')
 
 btnInformation.addEventListener("click", () => {
   console.log("clicou");
-  example.setAttribute(
+  textAbout.setAttribute(
     "value",
     "O paracetamol, tambem conhecido por acetaminofeno, é um farmaco com propriedades analgesicas e antipireticas utilizado essencialmente para tratar a febre e a dor leve e moderada, embora existam poucas evidencias de que o seu uso seja realmente eficaz no alivio da febre em criancas."
   );
   btnStorePharmacy.setAttribute("visible", "true");
+  textStorePharmacy.setAttribute("visible", "true")
 });
 
 btnStorePharmacy.addEventListener("click", () => {
+
   window.open(
     "https://www.panvel.com/panvel/buscarProduto.do?termoPesquisa=paracetamol",
     "_blank"
