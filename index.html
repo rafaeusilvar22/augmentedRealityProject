@@ -8,12 +8,14 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: files_mind/teste.mind;" 
+    <a-scene stats mindar-image="imageTargetSrc: files_mind/teste.mind;" 
       color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
-      vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" mindar-image="filterMinCF:0.001; filterBeta: 0.09">
+      vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
+      mindar-image="filterMinCF:0.1; filterBeta: 3" cursor="rayOrigin:mouse"
+    >
       <a-assets>
-        <a-asset-item id="minecraft" src="files_glb/herobrine_minecraft.glb">
-        </a-asset-item>
+        <a-asset-item id="minecraft" src="files_glb/herobrine_minecraft.glb"></a-asset-item>
+        <audio id="mineAudio" crossorigin="anonymous" src="Volume Alpha 03. Subwoofer Lullaby.mp3"></audio>
         <img id="IconLinkdin" src="linkedin.png"/>
         <a-asset-item id="deckUno" src="files_glb/uno_cards_3d.glb">
         </a-asset-item>
@@ -24,12 +26,13 @@
         raycaster=" far:10000; objects: .clickable;"
       >
       </a-camera>
-
+  
       <a-entity mindar-image-target="targetIndex: 0">
         <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="3 3 3" src="#deckUno" animation-mixer>
       </a-entity>
+      
       <a-entity mindar-image-target="targetIndex: 1">
-          <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#minecraft" animation-mixer>
+          <a-gltf-model sound="src: #mineAudio; on: click" rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#minecraft" animation-mixer>
           <a-image  id="linkedin" class="clickable" position="0 13.810 0" height="0.30"
             width="0.30" scale="4.2 4.2 4.2" src="#IconLinkdin"
             animation="property: scale; to: 1.5 1.5 1.5; easing: easeOutQuad; loop: true; dir: alternate"
