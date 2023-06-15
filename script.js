@@ -22,6 +22,7 @@ btnInformation.addEventListener("click", () => {
   btnStorePharmacy.setAttribute("visible", "true");
   textStorePharmacy.setAttribute("visible", "true");
   btnNextAbout.setAttribute("visible", "true");
+  btnInformation.removeAttribute('animation')
 });
 
 btnStorePharmacy.addEventListener("click", () => {
