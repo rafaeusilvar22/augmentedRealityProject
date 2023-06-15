@@ -5,12 +5,24 @@
 
 // });
 
+
+
 let BtnLogoWind = document.querySelector('#BtnLogoWind');
 let attributeWind = document.querySelector('#attributeWind');
+
+
+
+function clear(){
+ attributeWind.setAttribute('visible', 'false')   
+ BtnLogoWind.setAttribute('animation', 'property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate')
+}
+
 
 BtnLogoWind.addEventListener('click', () => {
   attributeWind.setAttribute('visible', 'true');
   BtnLogoWind.removeAttribute('animation');
+
+  setTimeout(clear, 6000);
 })
 
 
