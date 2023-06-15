@@ -19,6 +19,7 @@
         <img id="IconLinkdin" src="linkedin.png"/>
         <img id="iconPharmacy" src="images/pharmacy.png" alt="icon farmacia">
         <img id="iconInformation" src="images/information.png" alt="icon information">
+        <img id="iconRightArrow" src="images/right-arrow.png" alt="seta para direita">
         <a-asset-item id="pills" src="files_glb/pill_capsule.glb">
         </a-asset-item>
       </a-assets>
@@ -35,12 +36,12 @@
       
       <a-entity mindar-image-target="targetIndex: 0">
         <a-gltf-model
-            rotation="0 0 0 "
-            position="0 0 0" 
-            scale="20 20 20" 
-            src="#pills" 
-            id="textClickable" 
-            class="clickable"
+          rotation="0 0 0 "
+          position="0 0 0" 
+          scale="20 20 20" 
+          src="#pills" 
+          id="textClickable" 
+          class="clickable"
         >
         <!-- <a-text
             id="NameProduct" 
@@ -50,41 +51,58 @@
         >
         </a-text> -->
         <a-image 
-            visible="false"
-            id="storePharmacy"
-            class="clickable" 
-            position="0 0.023 0" 
-            height="0.35"
-            width="0.35" 
-            scale="0.030 0.030 0.030" 
-            src="#iconPharmacy"
+          visible="false"
+          id="storePharmacy"
+          class="clickable" 
+          position="0 0.023 0" 
+          height="0.35"
+          width="0.35" 
+          scale="0.030 0.030 0.030" 
+          src="#iconPharmacy"
         >
         </a-image>
         <a-text  
-            visible="false"
-            id="textStorePharmacy"
-            value="Farmacia online"
-            width="0.06" 
-            position="-0.009 0.015 0"
+          visible="false"
+          id="textStorePharmacy"
+          value="Farmacia online"
+          width="0.06" 
+          position="-0.009 0.015 0"
         >
         </a-text>
         <a-image 
-            id="btnInformation"
-            rotation="0 0 0 "
-            class="clickable"
-            position="0.020 0.023 0" 
-            width="0.35"
-            height="0.35"
-            scale="0.030 0.030 0.030" 
-            src="#iconInformation"
+          id="btnInformation"
+          rotation="0 0 0 "
+          class="clickable"
+          position="0.020 0.023 0" 
+          width="0.35"
+          height="0.35"
+          scale="0.030 0.030 0.030" 
+          src="#iconInformation"
         >
         </a-image>
         <a-text  
-            id="about" 
-            class="clickable" 
-            width="0.06" position="-0.030 -0.020 0"
+          id="about" 
+          class="clickable" 
+          width="0.06" position="-0.030 -0.020 0"
+        >
+        <a-text
+          visible="false"
+          id="aboutNext" 
+          width="0.06" position="-0.030 -0.020 0"
         >
         </a-text>
+        <a-image
+          visible="false"
+          id="btnNextAbout"
+          class="clickable" 
+          rotation="0 0 0"
+          width="0.20"
+          height="0.20"
+          scale="0.030 0.030 0.030" 
+          position="0.028 -0.018 0"
+          src="#iconRightArrow"
+        >
+        </a-image>
 
         <!-- <a-gltf-model sound="src: #mineAudio; on: click" rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#minecraft" animation-mixer> -->
           <!-- <a-image  id="linkedin" class="clickable" position="0 13.810 0" height="0.30"

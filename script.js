@@ -8,22 +8,33 @@
 let btnInformation = document.querySelector("#btnInformation");
 let textAbout = document.querySelector("#about");
 let btnStorePharmacy = document.querySelector("#storePharmacy");
-let textStorePharmacy = document.querySelector('#textStorePharmacy')
+let textStorePharmacy = document.querySelector("#textStorePharmacy");
+let aboutNext = document.querySelector("#aboutNext");
+let btnNextAbout = document.querySelector("#btnNextAbout");
+let btnReturnAbout = document.querySelector("#btnReturnAbout");
 
 btnInformation.addEventListener("click", () => {
   console.log("clicou");
   textAbout.setAttribute(
     "value",
-    "O paracetamol, tambem conhecido por acetaminofeno, é um farmaco com propriedades analgesicas e antipireticas utilizado essencialmente para tratar a febre e a dor leve e moderada, embora existam poucas evidencias de que o seu uso seja realmente eficaz no alivio da febre em criancas."
+    "Paracetamol é um analgesico e antipiretico, sendo indicado para a alivio da dor de intensidade leve a moderada, incluindo dor de cabeca, enxaqueca, dor musculo esqueletica, colicas menstruais, dor de garganta, dor de dente, dor pos-procedimentos odontologicos, dor e febre apos vacinacao, e dor de osteoartrite."
   );
   btnStorePharmacy.setAttribute("visible", "true");
-  textStorePharmacy.setAttribute("visible", "true")
+  textStorePharmacy.setAttribute("visible", "true");
+  btnNextAbout.setAttribute("visible", "true");
 });
 
 btnStorePharmacy.addEventListener("click", () => {
-
   window.open(
     "https://www.panvel.com/panvel/buscarProduto.do?termoPesquisa=paracetamol",
     "_blank"
   );
+});
+
+btnNextAbout.addEventListener("click", () => {
+  textAbout.setAttribute(
+    "value",
+    "Este medicamento nao deve ser usado em caso de hipersensibilidade ao paracetamol ou a qualquer outro componente da formula."
+  );
+  btnNextAbout.setAttribute("visible", "false");
 });
