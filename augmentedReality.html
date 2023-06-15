@@ -15,7 +15,8 @@
     >
       <a-assets>
         <a-asset-item id="dragonBaby" src="files_glb/dragon_baby_compress.glb">
-        <img id="iconWind" src="images/logo_vento_yugi.webp" alt="logo_vento_yugi">  
+        <img id="iconWind" src="images/logo_vento_yugi.webp" alt="logo_vento_yugi">
+        <img id="iconLevel" src="images/Level.webp" alt="level">
 
         <audio id="mineAudio" crossorigin="anonymous" src="Volume Alpha 03. Subwoofer Lullaby.mp3"></audio>
         <img id="IconLinkdin" src="linkedin.png"/>
@@ -42,7 +43,7 @@
             position="1.650 3.300 0" 
             height="25"
             width="25" 
-            scale="0.030 0.030 0.030" 
+            scale="0.025 0.025 0.025" 
             src="#iconWind"
             animation="property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
           ></a-image>
@@ -55,6 +56,28 @@
             width="5.5" 
             position="-0.340 4.140 0"        
           >
+          </a-text>
+          <a-image 
+            visible="true"
+            id="BtnIconLevel"
+            class="clickable"
+            position="0.870 2.780 0" 
+            height="20"
+            width="20" 
+            scale="0.020 0.020 0.020" 
+            src="#iconLevel"
+            animation="property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeInQuart; loop: true; dir: alternate"
+          >
+          </a-image>
+          <!-- <a-text  
+            visible="false"
+            id="attributeWind"
+            value="Monstros do atributo VENTO geralmente sao
+            monstros voadores. Como Fera-alada, 
+            Inseto voador, Fada e Dragao."
+            width="5.5" 
+            position="-0.340 4.140 0"        
+          ></a-text> -->
       </a-entity>
       
 

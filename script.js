@@ -5,28 +5,33 @@
 
 // });
 
+let BtnLogoWind = document.querySelector("#BtnLogoWind");
+let attributeWind = document.querySelector("#attributeWind");
 
-
-let BtnLogoWind = document.querySelector('#BtnLogoWind');
-let attributeWind = document.querySelector('#attributeWind');
-
-
-
-function clear(){
- attributeWind.setAttribute('visible', 'false')   
- BtnLogoWind.setAttribute('animation', 'property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate')
+function clear() {
+  attributeWind.setAttribute("visible", "false");
+  BtnLogoWind.setAttribute(
+    "animation",
+    "property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
+  );
+  attributeWind.removeAttribute('value');
 }
 
+BtnLogoWind.addEventListener("click", () => {
+  attributeWind.setAttribute("visible", "true");
+  attributeWind.setAttribute('value', "Monstros do atributo VENTO geralmente sao monstros voadores. Como Fera-alada,  Inseto voador, Fada e Dragao.")
+  BtnLogoWind.removeAttribute("animation");
+  setTimeout(clear, 8000);
+});
 
-BtnLogoWind.addEventListener('click', () => {
+
+let BtnIconLevel = document.querySelector('#BtnIconLevel');
+
+BtnIconLevel.addEventListener('click', () =>{
   attributeWind.setAttribute('visible', 'true');
-  BtnLogoWind.removeAttribute('animation');
-
-  setTimeout(clear, 6000);
+  attributeWind.setAttribute('value', 'O Nivel de um Card de Monstro, representado por estrelas no lado superior direito do card, geralmente mostra o quao poderoso e valioso o monstro. O Nivel minimo 1, e o maximo 12.')
+  setTimeout(clear, 8000);
 })
-
-
-
 
 let btnInformation = document.querySelector("#btnInformation");
 let textAbout = document.querySelector("#about");
@@ -45,7 +50,7 @@ btnInformation.addEventListener("click", () => {
   btnStorePharmacy.setAttribute("visible", "true");
   textStorePharmacy.setAttribute("visible", "true");
   btnNextAbout.setAttribute("visible", "true");
-  btnInformation.removeAttribute('animation')
+  btnInformation.removeAttribute("animation");
 });
 
 btnStorePharmacy.addEventListener("click", () => {
