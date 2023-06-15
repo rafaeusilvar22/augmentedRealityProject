@@ -21,7 +21,7 @@ BtnLogoWind.addEventListener("click", () => {
   attributeWind.setAttribute("visible", "true");
   attributeWind.setAttribute('value', "Monstros do atributo VENTO geralmente sao monstros voadores. Como Fera-alada,  Inseto voador, Fada e Dragao.")
   BtnLogoWind.removeAttribute("animation");
-  setTimeout(clear, 8000);
+  setTimeout(clear, 9000);
 });
 
 
@@ -30,7 +30,7 @@ let BtnIconLevel = document.querySelector('#BtnIconLevel');
 BtnIconLevel.addEventListener('click', () =>{
   attributeWind.setAttribute('visible', 'true');
   attributeWind.setAttribute('value', 'O Nivel de um Card de Monstro, representado por estrelas no lado superior direito do card, geralmente mostra o quao poderoso e valioso o monstro. O Nivel minimo 1, e o maximo 12.')
-  setTimeout(clear, 8000);
+  setTimeout(clear, 9000);
 })
 
 let btnInformation = document.querySelector("#btnInformation");
