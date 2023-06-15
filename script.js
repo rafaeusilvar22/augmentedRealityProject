@@ -14,6 +14,10 @@ function clear() {
     "animation",
     "property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
   );
+  BtnIconLevel.setAttribute(
+    "animation",
+    "property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
+  );
   attributeWind.removeAttribute('value');
 }
 
@@ -30,6 +34,7 @@ let BtnIconLevel = document.querySelector('#BtnIconLevel');
 BtnIconLevel.addEventListener('click', () =>{
   attributeWind.setAttribute('visible', 'true');
   attributeWind.setAttribute('value', 'O Nivel de um Card de Monstro, representado por estrelas no lado superior direito do card, geralmente mostra o quao poderoso e valioso o monstro. O Nivel minimo 1, e o maximo 12.')
+  BtnIconLevel.removeAttribute("animation");
   setTimeout(clear, 9000);
 })
 
