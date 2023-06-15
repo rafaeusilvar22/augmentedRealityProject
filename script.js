@@ -10,6 +10,7 @@ let attributeWind = document.querySelector('#attributeWind');
 
 BtnLogoWind.addEventListener('click', () => {
   attributeWind.setAttribute('visible', 'true');
+  BtnLogoWind.removeAttribute('animation');
 })
 
 
