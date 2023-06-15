@@ -5,6 +5,16 @@
 
 // });
 
+let BtnLogoWind = document.querySelector('#BtnLogoWind');
+let attributeWind = document.querySelector('#attributeWind');
+
+BtnLogoWind.addEventListener('click', () => {
+  attributeWind.setAttribute('visible', 'true');
+})
+
+
+
+
 let btnInformation = document.querySelector("#btnInformation");
 let textAbout = document.querySelector("#about");
 let btnStorePharmacy = document.querySelector("#storePharmacy");

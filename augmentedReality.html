@@ -8,19 +8,22 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <a-scene stats mindar-image="imageTargetSrc: files_mind/medicamento_generico.mind;" 
+    <a-scene stats mindar-image="imageTargetSrc: files_mind/dragon_and_logo_generic.mind;" 
       color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights"
       vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"
       mindar-image="filterMinCF:0.001; filterBeta: 500; missTolerance: 3" cursor="rayOrigin:mouse"
     >
       <a-assets>
-        <a-asset-item id="minecraft" src="files_glb/herobrine_minecraft.glb"></a-asset-item>
+        <a-asset-item id="dragonBaby" src="files_glb/dragon_baby_compress.glb">
+        <img id="iconWind" src="images/logo_vento_yugi.webp" alt="logo_vento_yugi">  
+
         <audio id="mineAudio" crossorigin="anonymous" src="Volume Alpha 03. Subwoofer Lullaby.mp3"></audio>
         <img id="IconLinkdin" src="linkedin.png"/>
         <img id="iconPharmacy" src="images/pharmacy.png" alt="icon farmacia">
         <img id="iconInformation" src="images/information.png" alt="icon information">
         <img id="iconRightArrow" src="images/right-arrow.png" alt="seta para direita">
         <a-asset-item id="pills" src="files_glb/pill_capsule.glb">
+
         </a-asset-item>
       </a-assets>
 
@@ -30,11 +33,32 @@
       >
       </a-camera>
   
-      <!-- <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="3 3 3" src="#pills" animation-mixer>
-      </a-entity> -->
-      
       <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.3 0.3 0.3" src="#dragonBaby" animation-mixer>
+          <a-image 
+            visible="true"
+            id="BtnLogoWind"
+            class="clickable"
+            position="1.700 3.300 0" 
+            height="25"
+            width="25" 
+            scale="0.030 0.030 0.030" 
+            src="#iconWind"
+            animation="property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
+          ></a-image>
+          <a-text  
+            visible="false"
+            id="attributeWind"
+            value="Monstros do atributo VENTO geralmente sao
+            monstros voadores. Como Fera-alada, 
+            Inseto voador, Fada e Dragao."
+            width="4.5" 
+            position="-0.340 4.140 0"        
+          >
+      </a-entity>
+      
+
+      <a-entity mindar-image-target="targetIndex: 1">
         <a-gltf-model
           rotation="0 0 0 "
           position="0 0 0" 
@@ -43,13 +67,6 @@
           id="textClickable" 
           class="clickable"
         >
-        <!-- <a-text
-            id="NameProduct" 
-            value="PARACETAMOL MED GENÉRICO" 
-            width="0.1"
-            position="-0.010 -0.015 0"
-        >
-        </a-text> -->
         <a-image 
           visible="false"
           id="storePharmacy"
