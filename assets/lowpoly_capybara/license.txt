@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly capybara for mobile game
+* source:	https://sketchfab.com/3d-models/lowpoly-capybara-for-mobile-game-033d29363b3949c9a324ea3fbcd641a5
+* author:	cjstudio (https://sketchfab.com/cjstudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly capybara for mobile game" (https://sketchfab.com/3d-models/lowpoly-capybara-for-mobile-game-033d29363b3949c9a324ea3fbcd641a5) by cjstudio (https://sketchfab.com/cjstudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
