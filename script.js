@@ -1,128 +1,74 @@
-window.onload = () => {
-  let method = 'dynamic';
+// let btnLinkdin = document.querySelector("#linkedin");
 
-  // if you want to statically add places, de-comment following line
-  method = 'static';
+// btnLinkdin.addEventListener("click", () =>{
+//     window.open("https://www.linkedin.com/in/rafael-silva-480a67222/", '_blank');
 
-  if (method === 'static') {
-      let places = staticLoadPlaces();
-      renderPlaces(places);
-  }
+// });
 
-  if (method !== 'static') {
+let BtnLogoWind = document.querySelector("#BtnLogoWind");
+let attributeWind = document.querySelector("#attributeWind");
 
-      // first get current user location
-      return navigator.geolocation.getCurrentPosition(function (position) {
-
-          // than use it to load from remote APIs some places nearby
-          dynamicLoadPlaces(position.coords)
-              .then((places) => {
-                  renderPlaces(places);
-              })
-      },
-          (err) => console.error('Error in retrieving position', err),
-          {
-              enableHighAccuracy: true,
-              maximumAge: 0,
-              timeout: 27000,
-          }
-      );
-  }
-};
-
-function staticLoadPlaces() {
-  return [
-      {
-          name: "Your place name",
-          location: {
-              lat: 0, // add here latitude if using static data
-              lng: 0, // add here longitude if using static data
-          }
-      },
-      {
-          name: 'Another place name',
-          location: {
-              lat: 0,
-              lng: 0,
-          }
-      }
-  ];
+function clear() {
+  attributeWind.setAttribute("visible", "false");
+  BtnLogoWind.setAttribute(
+    "animation",
+    "property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
+  );
+  BtnIconLevel.setAttribute(
+    "animation",
+    "property: scale; to: 0.01.5 0.01.5 0.01.5; easing: easeOutQuad; loop: true; dir: alternate"
+  );
+  attributeWind.removeAttribute('value');
 }
 
-// getting places from REST APIs
-function dynamicLoadPlaces(position) {
-  let params = {
-      radius: 300,    // search places not farther than this value (in meters)
-      clientId: 'N3WJ41R5UHA0FPIN4FWGK5ZJXUEAUJEOZ1BOI4SGJCZEL0KK',   // add your credentials here
-      clientSecret: 'CEMLIZYHN41GTFZG5LUYUWI2TNFQFHHJJY3QD00YFD43MAWZ',   // add your credentials here
-      version: '20300101',    // foursquare versioning, required but unuseful for this demo
-  };
+BtnLogoWind.addEventListener("click", () => {
+  attributeWind.setAttribute("visible", "true");
+  attributeWind.setAttribute('value', "Monstros do atributo VENTO geralmente sao monstros voadores. Como Fera-alada,  Inseto voador, Fada e Dragao.")
+  BtnLogoWind.removeAttribute("animation");
+  setTimeout(clear, 9000);
+});
 
-  // CORS Proxy to avoid CORS problems
-  let corsProxy = 'https://cors-anywhere.herokuapp.com/';
 
-  // Foursquare API
-  let endpoint = `${corsProxy}https://api.foursquare.com/v2/venues/search?intent=checkin
-      &ll=${position.latitude},${position.longitude}
-      &radius=${params.radius}
-      &client_id=${params.clientId}
-      &client_secret=${params.clientSecret}
-      &limit=15
-      &v=${params.version}`;
-  return fetch(endpoint)
-      .then((res) => {
-          return res.json()
-              .then((resp) => {
-                  return resp.response.venues;
-              })
-      })
-      .catch((err) => {
-          console.error('Error with places API', err);
-      })
-};
+let BtnIconLevel = document.querySelector('#BtnIconLevel');
 
-function renderPlaces(places) {
-  let scene = document.querySelector('a-scene');
+BtnIconLevel.addEventListener('click', () =>{
+  attributeWind.setAttribute('visible', 'true');
+  attributeWind.setAttribute('value', 'O Nivel de um Card de Monstro, representado por estrelas no lado superior direito do card, geralmente mostra o quao poderoso e valioso o monstro. O Nivel minimo 1, e o maximo 12.')
+  BtnIconLevel.removeAttribute("animation");
+  setTimeout(clear, 9000);
+})
 
-  places.forEach((place) => {
-      const latitude = place.location.lat;
-      const longitude = place.location.lng;
+let btnInformation = document.querySelector("#btnInformation");
+let textAbout = document.querySelector("#about");
+let btnStorePharmacy = document.querySelector("#storePharmacy");
+let textStorePharmacy = document.querySelector("#textStorePharmacy");
+let aboutNext = document.querySelector("#aboutNext");
+let btnNextAbout = document.querySelector("#btnNextAbout");
+let btnReturnAbout = document.querySelector("#btnReturnAbout");
 
-      // add place icon
-      const icon = document.createElement('a-image');
-      icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-      icon.setAttribute('name', place.name);
-      // icon.setAttribute('src', 'linkdin.png');
+btnInformation.addEventListener("click", () => {
+  console.log("clicou");
+  textAbout.setAttribute(
+    "value",
+    "Paracetamol é um analgesico e antipiretico, sendo indicado para a alivio da dor de intensidade leve a moderada, incluindo dor de cabeca, enxaqueca, dor musculo esqueletica, colicas menstruais, dor de garganta, dor de dente, dor pos-procedimentos odontologicos, dor e febre apos vacinacao, e dor de osteoartrite."
+  );
+  btnStorePharmacy.setAttribute("visible", "true");
+  textStorePharmacy.setAttribute("visible", "true");
+  btnNextAbout.setAttribute("visible", "true");
+  btnInformation.removeAttribute("animation");
+});
 
-      // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-      icon.setAttribute('scale', '20, 20');
+btnStorePharmacy.addEventListener("click", () => {
+  window.open(
+    "https://www.panvel.com/panvel/buscarProduto.do?termoPesquisa=paracetamol",
+    "_blank"
+  );
+});
 
-      icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
-
-      const clickListener = function (ev) {
-          ev.stopPropagation();
-          ev.preventDefault();
-
-          const name = ev.target.getAttribute('name');
-
-          const el = ev.detail.intersection && ev.detail.intersection.object.el;
-
-          if (el && el === ev.target) {
-              const label = document.createElement('span');
-              const container = document.createElement('div');
-              container.setAttribute('id', 'place-label');
-              label.innerText = name;
-              container.appendChild(label);
-              document.body.appendChild(container);
-
-              setTimeout(() => {
-                  container.parentElement.removeChild(container);
-              }, 1500);
-          }
-      };
-
-      icon.addEventListener('click', clickListener);
-
-      scene.appendChild(icon);
-  });
-}
+btnNextAbout.addEventListener("click", () => {
+  textAbout.setAttribute(
+    "value",
+    "Este medicamento nao deve ser usado em caso de hipersensibilidade ao paracetamol ou a qualquer outro componente da formula."
+  );
+  btnNextAbout.setAttribute("visible", "false");
+});
