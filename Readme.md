@@ -7,6 +7,10 @@ a-Frame é uma estrutura da web para criar experiências de realidade virtual (V
 Aframe-inspector: CTRL + ALT + I
 https://github.com/aframevr/aframe-inspector
 
+Manipulando seu modelo 3d
+https://medium.com/@fabiojcortes/manipulate-your-3d-content-with-gestures-in-ar-js-78da4c076607
+
+
 Ideias: 
 
 - ler uma marca e mostrar os estabelecimentos locais
@@ -18,3 +22,4 @@ Ideias:
 - ler determinado objeto e mostrar especificações tecnicas sobre ele e manual de instrução
 
 - ler uma vaga de emprego e mostrar endereço, site e informações relacionada sobre ela
+
