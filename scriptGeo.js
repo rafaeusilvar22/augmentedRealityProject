@@ -27,7 +27,7 @@ var models = [
     },
     {
         url: 'assets/lowpoly_capybara/scene.gltf',
-        scale: '1.9 1.9 1.9',
+        scale: '5.9 5.9 5.9',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
