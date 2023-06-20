@@ -3,6 +3,7 @@ a-Frame é uma estrutura da web para criar experiências de realidade virtual (V
 
  https://aframe.io/docs/1.4.0/introduction/#what-is-a-frame
 
+https://medium.com/chialab-open-source/build-your-location-based-augmented-reality-web-app-c2442e716564
 
 Aframe-inspector: CTRL + ALT + I
 https://github.com/aframevr/aframe-inspector
