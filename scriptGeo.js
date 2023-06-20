@@ -22,14 +22,14 @@ var models = [
     {
         url: 'assets/capybara/scene.gltf',
         scale: '0.5 0.5 0.5',
-        info: 'Magnemite, Lv. 5, HP 10/10',
+        info: 'Capivara, Lv. 10, HP 30/10',
         rotation: '0 180 0',
     },
     {
         url: 'assets/samurai_capybara/scene.gltf',
         scale: '0.9 0.9 0.9',
         rotation: '0 180 0',
-        info: 'Articuno, Lv. 80, HP 100/100',
+        info: 'Capivara Samurai, Lv. 80, HP 100/100',
     },
     // {
     //     url: 'capybara/scene.gltf',
