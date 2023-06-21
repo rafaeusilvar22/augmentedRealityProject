@@ -112,9 +112,9 @@ function renderPlaces(places) {
       "gps-entity-place",
       `latitude: ${latitude}; longitude: ${longitude};`
     );
+    model.setAttribute("animation-mixer", "");
 
     setModel(models[modelIndex], model);
-    model.setAttribute("animation-mixer", "");
 
     model.setAttribute("class", "clickable");
 
