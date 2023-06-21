@@ -1,6 +1,6 @@
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerHTML = '<img width="40px" height="auto" src="assets/images/return.png"/>';
+    button.innerHTML = '<img width="40px" height="40px" src="assets/images/return.png"/>';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -23,7 +23,7 @@ var models = [
         url: 'assets/lesser_dog_-_undertale/scene.gltf',
         scale: '0.005 0.005 0.005',
         rotation: '0 180 0',
-        info: 'Cachorro Gurreiro, Lv. 70, HP 150/150',
+        info: 'Cachorro Guerreiro, Lv. 70, HP 150/150',
     },
     {
         url: 'assets/low_poly_dog/scene.gltf',
