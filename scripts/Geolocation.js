@@ -63,7 +63,10 @@ var setModel = function (model, entity) {
 
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
-};
+    div.addEventListener('click', () => {
+      alert("CLICOU")
+    });
+}
 
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
