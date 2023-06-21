@@ -18,6 +18,7 @@
     left: 1.5%;
 }
 
+
 .btnAbout{
     width: 2.5rem;
     height: 2.6rem;
@@ -38,6 +39,10 @@ button {
     color: white;
     outline: none;
     cursor: pointer;
+}
+
+.button:hover{
+    background-color: #2c76b7c7;
 }
 
 .instructions {
