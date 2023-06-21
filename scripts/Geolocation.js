@@ -21,7 +21,7 @@ function staticLoadPlaces() {
 var models = [
     {
         url: 'assets/lesser_dog_-_undertale/scene.gltf',
-        scale: '0.5 0.5 0.5',
+        scale: '0.05 0.05 0.05',
         rotation: '0 180 0',
         info: 'Cachorro Gurreiro, Lv. 70, HP 150/150',
     },
