@@ -35,30 +35,40 @@ let models = [
     scale: "0.5 0.5 0.5",
     rotation: "0 180 0",
     info: "Refrigerante Dolly, Lv. 25, HP 40/40",
+    about:
+    "Oi pessoal, eu sou o Dollynho, seu amiguinho! Segundo o meu proprietário, fui inspirado no Teletubbies."
   },
   {
     url: "assets/loro_jose/scene.gltf",
     scale: "0.01 0.01 0.01",
     rotation: "0 180 0",
     info: "Loro Jose, Lv. 10, HP 10/10",
+    about:
+    "Louro José foi um boneco de um papagaio que misturava artifícios de fantoches com a tecnologia de controle remoto."
   },
   {
     url: "assets/lesser_dog_-_undertale/scene.gltf",
     scale: "0.005 0.005 0.005",
     rotation: "0 180 0",
     info: "Cachorro Guerreiro, Lv. 70, HP 150/150",
+    about:
+    "Um cachorro equipado com uma espada muito afiada e um escudo extremamente resistente"
   },
   {
     url: "assets/capybara/scene.gltf",
     scale: "0.5 0.5 0.5",
     info: "Capivara, Lv. 10, HP 30/10",
     rotation: "0 180 0",
+    about:
+    "A capivara destaca-se por ser o maior roedor do mundo. É um animal herbívoro que pode ser encontrado nas Américas Central e do Sul."
   },
   {
     url: "assets/samurai_capybara/scene.gltf",
     scale: "0.9 0.9 0.9",
     rotation: "0 180 0",
     info: "Capivara Samurai, Lv. 80, HP 100/100",
+    about:
+    "Cansei de ser um Templário Ardente, agora farei jus ao meu nome e serei a Capivara Samurai mais forte de Blumenau"
   },
 ];
 
@@ -80,7 +90,7 @@ var setModel = function (model, entity) {
 
   const div = document.querySelector(".instructions");
   let about = document.querySelector(".about");
-  about.innerText = model.about;
+  about.innerHTML = `<p>${model.about}</p>`;
   div.innerText = model.info;
 
   document
