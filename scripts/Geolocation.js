@@ -1,6 +1,6 @@
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '﹖';
+    button.innerHTML = '<img width="40px" height="auto" src="assets/images/return.png"/>';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -9,7 +9,7 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Pokèmon',
+            name: 'Animaismon',
             location: {
                 lat: -26.915493045742146,
                 lng: -49.05746340751648,

@@ -5,7 +5,7 @@
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="scripts/script.js"></script>
   </head>
   <body>
     <a-scene stats mindar-image="imageTargetSrc: files_mind/dragon_and_logo_generic.mind;" 
@@ -14,7 +14,7 @@
       mindar-image="filterMinCF:0.001; filterBeta: 500; missTolerance: 3" cursor="rayOrigin:mouse"
     >
       <a-assets>
-        <a-asset-item id="dragonBaby" src="files_glb/dragon_baby_compress.glb">
+        <a-asset-item id="dragonBaby" src="assets/files_glb/dragon_baby_compress.glb">
         <img id="iconWind" src="images/logo_vento_yugi.webp" alt="logo_vento_yugi">
         <img id="iconLevel" src="images/Level.webp" alt="level">
 
@@ -23,7 +23,7 @@
         <img id="iconPharmacy" src="images/pharmacy.png" alt="icon farmacia">
         <img id="iconInformation" src="images/information.png" alt="icon information">
         <img id="iconRightArrow" src="images/right-arrow.png" alt="seta para direita">
-        <a-asset-item id="pills" src="files_glb/pill_capsule.glb">
+        <a-asset-item id="pills" src="assets/files_glb/pill_capsule.glb">
 
         </a-asset-item>
       </a-assets>
