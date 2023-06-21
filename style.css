@@ -1,6 +1,6 @@
 .centered {
     height: 12%;
-    justify-content: center;
+   justify-content: space-evenly;
     position: fixed;
     bottom: 0%;
     display: flex;
@@ -8,6 +8,12 @@
     width: 100%;
     margin: 0px auto;
     left: 0;
+    right: 0;
+}
+
+.right{
+    height: 98%;
+    position: fixed;
     right: 0;
 }
 
