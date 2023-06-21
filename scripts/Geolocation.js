@@ -23,7 +23,7 @@ var models = [
         url: 'assets/low_poly_dog/scene.gltf',
         scale: '0.001 0.001 0.001',
         rotation: '0 180 0',
-        info: 'Dragonite, Lv. 99, HP 150/150',
+        info: 'Cachorro Caramelo, Lv. 70, HP 150/150',
     },
     {
         url: 'assets/capybara/scene.gltf',
