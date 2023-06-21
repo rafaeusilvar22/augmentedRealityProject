@@ -20,6 +20,12 @@ function staticLoadPlaces() {
 
 let models = [
     {
+        url: 'assets/loro_jose/scene.gltf',
+        scale: '0.01 0.01 0.01',
+        rotation: '0 180 0',
+        info: 'Loro Jose, Lv. 10, HP 10/10',
+    },
+    {
         url: 'assets/lesser_dog_-_undertale/scene.gltf',
         scale: '0.005 0.005 0.005',
         rotation: '0 180 0',
@@ -79,10 +85,6 @@ function renderPlaces(places) {
 
         model.setAttribute('animation-mixer', '');
         model.setAttribute('class', 'clickable');
-        model.addEventListener('click', () => {
-            alert("CLICOU")
-            console.log("clicou")
-        })
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
