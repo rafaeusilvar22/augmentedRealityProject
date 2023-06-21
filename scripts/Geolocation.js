@@ -21,8 +21,8 @@ function staticLoadPlaces() {
 var models = [
     {
         url: 'assets/low_poly_dog/scene.gltf',
-        scale: '0.003 0.003 0.003',
-        rotation: '0 0 0',
+        scale: '0.001 0.001 0.001',
+        rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
     {
