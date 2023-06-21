@@ -20,10 +20,16 @@ function staticLoadPlaces() {
 
 var models = [
     {
+        url: 'lesser_dog_-_undertale',
+        scale: '0.5 0.5 0.5',
+        rotation: '0 180 0',
+        info: 'Cachorro Gurreiro, Lv. 70, HP 150/150',
+    },
+    {
         url: 'assets/low_poly_dog/scene.gltf',
         scale: '0.001 0.001 0.001',
         rotation: '0 180 0',
-        info: 'Cachorro Caramelo, Lv. 70, HP 150/150',
+        info: 'Cachorro Caramelo, Lv. 10, HP 150/150',
     },
     {
         url: 'assets/capybara/scene.gltf',
