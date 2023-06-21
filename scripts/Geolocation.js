@@ -20,6 +20,12 @@ function staticLoadPlaces() {
 
 var models = [
     {
+        url: 'assets/low_poly_dog/scene.gltf',
+        scale: '0.003 0.003 0.003',
+        rotation: '0 0 0',
+        info: 'Dragonite, Lv. 99, HP 150/150',
+    },
+    {
         url: 'assets/capybara/scene.gltf',
         scale: '0.5 0.5 0.5',
         info: 'Capivara, Lv. 10, HP 30/10',
@@ -31,12 +37,6 @@ var models = [
         rotation: '0 180 0',
         info: 'Capivara Samurai, Lv. 80, HP 100/100',
     },
-    // {
-    //     url: 'capybara/scene.gltf',
-    //     scale: '0.08 0.08 0.08',
-    //     rotation: '0 180 0',
-    //     info: 'Dragonite, Lv. 99, HP 150/150',
-    // },
 ];
 
 var modelIndex = 0;

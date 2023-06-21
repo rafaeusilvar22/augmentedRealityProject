@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Dog
+* source:	https://sketchfab.com/3d-models/low-poly-dog-335f2250195c407bac91695fbdd193e1
+* author:	Rodesqa (https://sketchfab.com/rodesqa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Dog" (https://sketchfab.com/3d-models/low-poly-dog-335f2250195c407bac91695fbdd193e1) by Rodesqa (https://sketchfab.com/rodesqa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
