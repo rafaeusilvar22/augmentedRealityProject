@@ -18,7 +18,7 @@ function staticLoadPlaces() {
     ];
 }
 
-var models = [
+let models = [
     {
         url: 'assets/lesser_dog_-_undertale/scene.gltf',
         scale: '0.005 0.005 0.005',
@@ -63,9 +63,6 @@ var setModel = function (model, entity) {
 
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
-    div.addEventListener('click', () => {
-      alert("CLICOU")
-    });
 }
 
 function renderPlaces(places) {
@@ -81,6 +78,11 @@ function renderPlaces(places) {
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
+        model.setAttribute('class', 'clickable');
+        model.addEventListener('click', () => {
+            alert("CLICOU")
+            console.log("clicou")
+        })
 
         document.querySelector('button[data-action="change"]').addEventListener('click', function () {
             var entity = document.querySelector('[gps-entity-place]');
