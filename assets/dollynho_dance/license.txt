@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dollynho Dance
+* source:	https://sketchfab.com/3d-models/dollynho-dance-887a347705444cd093c4eea7acb06e1c
+* author:	Tayna Barbosa (https://sketchfab.com/taynabarbosa)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dollynho Dance" (https://sketchfab.com/3d-models/dollynho-dance-887a347705444cd093c4eea7acb06e1c) by Tayna Barbosa (https://sketchfab.com/taynabarbosa) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

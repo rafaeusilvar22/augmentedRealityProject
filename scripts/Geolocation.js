@@ -20,6 +20,12 @@ function staticLoadPlaces() {
 
 let models = [
     {
+        url: 'assets/dollynho_dance/scene.gltf',
+        scale: '0.5 0.5 0.5',
+        rotation: '0 180 0',
+        info: 'Refrigerante Dolly, Lv. 25, HP 40/40',
+    },
+    {
         url: 'assets/loro_jose/scene.gltf',
         scale: '0.01 0.01 0.01',
         rotation: '0 180 0',
