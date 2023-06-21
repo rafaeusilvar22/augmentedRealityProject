@@ -1,7 +1,7 @@
 window.onload = () => {
   let button = document.querySelector('button[data-action="change"]');
-  let btntExample = document.querySelector('button[data-action="teste"]');
-  btntExample.innerText = "?";
+  let btnAbout = document.querySelector('button[data-action="teste"]');
+  btnAbout.innerText = "?";
   button.innerHTML =
     '<img width="40px" height="40px" src="assets/images/return.png"/>';
 
