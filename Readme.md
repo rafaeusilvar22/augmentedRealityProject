@@ -1,8 +1,6 @@
 <h1 align="center">Animon GO</h1>
-<img width="30%" src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
-file:///home/rafael/Documentos/imagens_realidade_aumentada/imagem_cachorro_guerreiro_2.jpeg
-
-
+<img src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
+<h2 align="center">Introdução</h2>
 O que é A-frame?
 a-Frame é uma estrutura da web para criar experiências de realidade virtual (VR). A-Frame é baseado em HTML, tornando simples começar. Mas o A-Frame não é apenas um gráfico de cena 3D ou uma linguagem de marcação; o núcleo é uma poderosa estrutura de componente de entidade que fornece uma estrutura declarativa, extensível e combinável para three.js .
 
