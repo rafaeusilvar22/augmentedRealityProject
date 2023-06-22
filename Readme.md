@@ -7,7 +7,7 @@ O Animon Go foi desenvolvido com Realidade Aumentada, que é a integração de e
 
 O Animon Go utiliza o recurso de <strong>Realidade Aumentada baseada em localização</strong>, esse tipo de AR usa lugares do mundo real (coordenadas de latitude e longitude de GPS) para mostrar conteúdo de Realidade Aumentada, no dispositivo do usuário. O usuário pode se mover (idealmente ao ar livre) e através de seus smartphones pode ver o conteúdo AR onde os lugares estão no mundo real. Mover-se e girar o telefone fará com que o conteúdo AR mude de acordo com a posição e rotação do usuário (portanto, os locais são 'ancorados' em sua posição real e parecem maiores/menores de acordo com a distância do usuário).
 
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+<img src="assets/images/ar_louro_jose.gif" width="40%" height="auto" />
 
  https://aframe.io/docs/1.4.0/introduction/#what-is-a-frame
 
