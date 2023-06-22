@@ -17,7 +17,7 @@ O Animon Go utiliza o recurso de <strong>Realidade Aumentada baseada em localiza
 </ul>
 <br/><br/>
 <h3>Status do Projeto</h3>
-Atualmente as cordenadas de latitude e longitude estão estáticas, ou seja estão fixas em somente um local (temporario), logo, só será possivel visualizar os modelos 3d caso o usúario esteja próximo a essas cordenadas utlizadas no projeto.
+Atualmente as cordenadas de latitude e longitude estão estáticas, ou seja estão fixas em somente um local (é temporário). Logo, só será possivel visualizar os modelos 3D caso o usúario esteja próximo a essas cordenadas utlizadas no projeto.
 <br/><br/>
-<h3>Próximos passos</h3>
-Implementaremos uma <a href="https://location.foursquare.com/docs/">API externa</a> que permite utilizar as coordenadas de localização do dispositivo do usuario em tempo real. Dessa maneira, a localização deixará de ser estática e se tornará dinamica, dando a possibilidade de visualizar os modelos de realidade aumentada de qualquer canto do mundo!
+<h3>Próximo passo</h3>
+Implementarei uma <a href="https://location.foursquare.com/docs/">API externa</a> que basicamente ela irá capturar a latitude e longitude do dispositvo e então irá atualizar as coordenadas de geolocalização que estão estaticamente, permitindo então que o usuario consiga visualizar os modelos 3d, indenpendente de onde esteja no mundo. 
