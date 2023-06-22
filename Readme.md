@@ -1,4 +1,5 @@
 <h1 align="center">Animon GO</h1>
+file:///home/rafael/Documentos/imagens_realidade_aumentada/imagem_cachorro_guerreiro_2.jpeg
 
 
 O que é A-frame?
