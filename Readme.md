@@ -1,8 +1,8 @@
 <h1 align="center">Animon GO</h1>
-<img src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
-<h2 align="center">Introdução</h2>
-O que é A-frame?
-a-Frame é uma estrutura da web para criar experiências de realidade virtual (VR). A-Frame é baseado em HTML, tornando simples começar. Mas o A-Frame não é apenas um gráfico de cena 3D ou uma linguagem de marcação; o núcleo é uma poderosa estrutura de componente de entidade que fornece uma estrutura declarativa, extensível e combinável para three.js .
+<img width="30%" src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
+<h2 style="display:flex: justify-content:center">Introdução</h2>
+A realidade aumentada (RA ou AR) é a integração de elementos virtuais em cenas do mundo real, em geral por meio de câmeras e sensores de movimento. O recurso tem sido usada com frequência em aplicativos de redes sociais, com os filtros do Instagram e jogos como o Pokémon GO. A tecnologia também pode ser utilizada para fins educacionais e profissionais, em áreas como design de produtos, marketing e engenharia. Com ela, é possível visualizar objetos tridimensionais no mundo real, em geral a partir de telas, como as do celular, ou com óculos translúcidos de RA. Ou seja, a realidade aumentada é uma experiência interativa do mundo real.
+
 
  https://aframe.io/docs/1.4.0/introduction/#what-is-a-frame
 
