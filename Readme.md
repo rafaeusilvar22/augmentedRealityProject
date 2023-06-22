@@ -1,12 +1,11 @@
 <h1 align="center">Animon GO</h1>
 <img width="30%" src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
 <h2>Introdução</h2>
-<strong>O que significa Web AR (Realidade Aumentada na Web)</strong>
 <br/>
-A Realidade Aumentada é a tecnologia que possibilita a sobreposição de conteúdos no mundo real. Ele pode ser fornecido para vários tipos de dispositivos: portáteis (como telefones celulares), fones de ouvido, telas de desktop e assim por diante.
-<br/>
-Para dispositivos portáteis (mais geralmente, para dispositivos de visualização de vídeo), a 'realidade' é capturada de uma ou mais câmeras e depois mostrada na tela do dispositivo, adicionando algum tipo de conteúdo sobre ela.
-![image](https://github.com/rafaeusilvar22/mindAr/assets/102971857/63ff0bdc-7348-4305-9a45-c560e454fd90)
+O Animon Go foi desenvolvido com Realidade Aumentada, que é a integração de elementos virtuais em cenas do mundo real, em geral por meio de câmeras e sensores de movimento. Este recurso tem sido usado com frequência em aplicativos de redes sociais, com os filtros do Instagram e jogos como o Pokémon GO. A tecnologia também pode ser utilizada para fins educacionais e profissionais, em áreas como design de produtos, marketing e engenharia. Com ela, é possível visualizar objetos tridimensionais no mundo real, em geral a partir de telas, como as do celular, ou com óculos translúcidos de Realidade Aumentada. Ou seja, a realidade aumentada é uma experiência interativa do mundo real.
+<br/><br/>
+
+O Animon Go utiliza o recurso de <strong>Realidade Aumentada baseada em localização</strong>, esse tipo de AR usa lugares do mundo real (coordenadas de latitude e longitude de GPS) para mostrar conteúdo de Realidade Aumentada, no dispositivo do usuário. O usuário pode se mover (idealmente ao ar livre) e através de seus smartphones pode ver o conteúdo AR onde os lugares estão no mundo real. Mover-se e girar o telefone fará com que o conteúdo AR mude de acordo com a posição e rotação do usuário (portanto, os locais são 'ancorados' em sua posição real e parecem maiores/menores de acordo com a distância do usuário).
 
 
  https://aframe.io/docs/1.4.0/introduction/#what-is-a-frame
