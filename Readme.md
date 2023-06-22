@@ -15,3 +15,9 @@ O Animon Go utiliza o recurso de <strong>Realidade Aumentada baseada em localiza
  <li><strong>Compatibilidade:</strong></li> é cross-browser, funciona em todos os navegadores de telefone suportando webgl e webrtc (basicamente todos os telefones Android e iPhones acima do iOS 11)
  <li><strong>Suco de Brasil</strong></li> Animon utiliza modelos 3d de objetos e animais brasileiros
 </ul>
+<br/><br/>
+<h3>Status do Projeto</h3>
+Atualmente as cordenadas de latitude e longitude estão estáticas, ou seja estão fixas em somente um local (temporario), logo, só será possivel visualizar os modelos 3d caso o usúario esteja próximo a essas cordenadas utlizadas no projeto.
+<br/><br/>
+<h3>Próximos passos</h3>
+Implementaremos uma <a href="https://location.foursquare.com/docs/">API externa</a> que permite utilizar as coordenadas de localização do dispositivo do usuario em tempo real. Dessa maneira, a localização deixará de ser estática e se tornará dinamica, dando a possibilidade de visualizar os modelos de realidade aumentada de qualquer canto do mundo!
