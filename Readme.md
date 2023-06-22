@@ -1,4 +1,5 @@
 <h1 align="center">Animon GO</h1>
+<img width="30%" src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
 file:///home/rafael/Documentos/imagens_realidade_aumentada/imagem_cachorro_guerreiro_2.jpeg
 
 
