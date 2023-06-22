@@ -21,3 +21,6 @@ Atualmente as coordenadas de latitude e longitude estão estáticas, ou seja, es
 <br/><br/>
 <h3>Próximo passo</h3>
 Implementarei uma <a href="https://location.foursquare.com/docs/">API externa</a> que basicamente utilizará o recurso de localização do disposito para capturar a latitude e longitude e então irá atualizar as coordenadas de geolocalização que estão estáticas, permitindo então que o usuario consiga visualizar os modelos 3D indenpendente de onde esteja no mundo.
+<br/><br/>
+<h3>Pessoas Desenvolvedoras do Projeto</h3>
+<ul><li><strong>Rafael Silva</strong> - Development Front End</li></ul>
