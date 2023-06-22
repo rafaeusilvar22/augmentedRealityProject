@@ -120,7 +120,7 @@ function renderPlaces(places) {
 
     document
       .querySelector('button[data-action="change"]')
-      .addEventListener("click", function () {
+      .addEventListener("click", () => {
         let entity = document.querySelector("[gps-entity-place]");
         modelIndex++;
         let newIndex = modelIndex % models.length;
