@@ -11,17 +11,12 @@
         óculos translúcidos de RA. Ou seja, a realidade aumentada é uma
         experiência interativa do mundo real.
       </p>
-      <br />
-      <br />
       <a class="btnAugmentedReality" href="augmentedReality.html">Acessar câmera</a>
     </article>
-    <br />
     <br />
     <article>
       <h4>Objetos utilizados para a leitura e execução da realidade aumentada:</h4>
       <img src="images/BabyDragon.webp" height="auto" width="30%" alt="" />
-      <br>
-      <br>
       <p>Obs: Caso você não possua o card Dragão Filhote do Yu-Gi-Oh!, utilize esta imagem acima para ter a experiência
         de
         realidade aumentada.
@@ -29,12 +24,9 @@
           href="augmentedReality.html">câmera de realidade aumentada</a> e enquadre essa imagem no leitor. 
       </p>
       <br>
-      <br>
       <p>Você também pode utilizar a logo de Medicamento Genérico. E caso você também não possua
         nenhum medicamento ou caixa com contém esta logo, realize o mesmo processo utilizando uma tela secundaria como foi citado anteriormente com a carta do Yu-Gi-Oh!</p>
-      <br>
       <img src="images/generico.png" height="auto" width="50%" alt="" />
-      <br>
       <br>
       <a class="btnAugmentedReality" href="augmentedReality.html">Acessar câmera</a>
     </article>
