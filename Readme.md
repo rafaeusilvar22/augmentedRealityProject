@@ -1,26 +1,46 @@
-<h1 align="center">Animon GO</h1>
-<img width="30%" src="assets/images/imagem_cachorro_guerreiro_2.jpeg"/>
-<h2>Introdução</h2>
-O Animon Go foi desenvolvido com Realidade Aumentada, que é a integração de elementos virtuais em cenas do mundo real, em geral por meio de câmeras e sensores de movimento. Este recurso tem sido usado com frequência em aplicativos de redes sociais, com os filtros do Instagram e jogos como o Pokémon GO. A tecnologia também pode ser utilizada para fins educacionais e profissionais, em áreas como design de produtos, marketing e engenharia. Com ela, é possível visualizar objetos tridimensionais no mundo real, em geral a partir de telas, como as do celular, ou com óculos translúcidos de Realidade Aumentada. Ou seja, a realidade aumentada é uma experiência interativa do mundo real.
-<br/><br/>
-
-O Animon Go utiliza o recurso de <strong>Realidade Aumentada baseada em localização</strong>, esse tipo de AR usa lugares do mundo real (coordenadas de latitude e longitude de GPS) para mostrar conteúdo de Realidade Aumentada, no dispositivo do usuário. O usuário pode se mover (idealmente ao ar livre) e através de seus smartphones pode ver o conteúdo AR onde os lugares estão no mundo real. Mover-se e girar o telefone fará com que o conteúdo AR mude de acordo com a posição e rotação do usuário (portanto, os locais são 'ancorados' em sua posição real e parecem maiores/menores de acordo com a distância do usuário).
-
-<img src="assets/images/ar_louro_jose.gif" width="40%" height="auto" />
-<br/>
-<h3>Pontos chave</h3>
-<ul>
- <li><strong>Muito rápido:</strong> funciona com eficiência mesmo em telefones</li>
- <li><strong>Baseado na web:</strong> uma solução web pura, portanto não requer instalação. Totalmente baseado em javascript, usando three.js + A-Frame + jsartoolkit5</li>
- <li><strong>Compatibilidade:</strong></li> é cross-browser, funciona em todos os navegadores de telefone suportando webgl e webrtc (basicamente todos os telefones Android e iPhones acima do iOS 11)
- <li><strong>Suco de Brasil</strong></li> Animon utiliza modelos 3d de objetos e animais brasileiros
-</ul>
-<br/><br/>
-<h3>Status do Projeto</h3>
-Atualmente as coordenadas de latitude e longitude estão estáticas, ou seja, estão fixas em somente um local (é temporário). Logo, só será possivel visualizar os modelos 3D caso o usúario esteja próximo as cordenadas utlizadas no projeto.
-<br/><br/>
-<h3>Próximo passo</h3>
-Implementarei uma <a href="https://location.foursquare.com/docs/" target="_blank">API externa</a> que basicamente utilizará o recurso de localização do disposito para capturar a latitude e longitude e então atualizará as coordenadas de geolocalização que estão estáticas. Permitindo assim que o usuario consiga visualizar os modelos 3D indenpendente de onde ele esteja no mundo.
-<br/><br/>
-<h3>Pessoas Desenvolvedoras do Projeto</h3>
-<ul><li><strong><a href="https://www.linkedin.com/in/rafael-silva-480a67222/" target="_blank">Rafael Silva</a></strong> - Development Front End</li></ul>
+<h4>O que é a realidade aumentada?</h4>
+      <p>
+        A realidade aumentada (RA ou AR) é a integração de elementos virtuais
+        em cenas do mundo real, em geral por meio de câmeras e sensores de
+        movimento. O recurso tem sido usada com frequência em aplicativos de
+        redes sociais, com os filtros do Instagram e jogos como o Pokémon GO.
+        A tecnologia também pode ser utilizada para fins educacionais e
+        profissionais, em áreas como design de produtos, marketing e
+        engenharia. Com ela, é possível visualizar objetos tridimensionais no
+        mundo real, em geral a partir de telas, como as do celular, ou com
+        óculos translúcidos de RA. Ou seja, a realidade aumentada é uma
+        experiência interativa do mundo real.
+      </p>
+      <br />
+      <br />
+      <a class="btnAugmentedReality" href="augmentedReality.html">Acessar câmera</a>
+    </article>
+    <br />
+    <br />
+    <article>
+      <h4>Objetos utilizados para a leitura e execução da realidade aumentada:</h4>
+      <img src="images/BabyDragon.webp" height="auto" width="30%" alt="" />
+      <br>
+      <br>
+      <p>Obs: Caso você não possua o card Dragão Filhote do Yu-Gi-Oh!, utilize esta imagem acima para ter a experiência
+        de
+        realidade aumentada.
+        Para isso, deixe essa imagem exibida por completo em uma tela secundaria, e com o seu dispositivo em mãos, acesse a <a style="color: #dbd814; text-decoration: none;"
+          href="augmentedReality.html">câmera de realidade aumentada</a> e enquadre essa imagem no leitor. 
+      </p>
+      <br>
+      <br>
+      <p>Você também pode utilizar a logo de Medicamento Genérico. E caso você também não possua
+        nenhum medicamento ou caixa com contém esta logo, realize o mesmo processo utilizando uma tela secundaria como foi citado anteriormente com a carta do Yu-Gi-Oh!</p>
+      <br>
+      <img src="images/generico.png" height="auto" width="50%" alt="" />
+      <br>
+      <br>
+      <a class="btnAugmentedReality" href="augmentedReality.html">Acessar câmera</a>
+    </article>
+    <br><br>
+    <article>
+      <span>Realidade Aumentada com o uso de Geolocalização (Em Desenvolvimento).</span>
+      <br><br>
+      <a class="btnAugmentedReality" href="augRealityGeoloc.html">Geolocalização</a>
+    </article>
