@@ -38,9 +38,3 @@
       <br>
       <a class="btnAugmentedReality" href="augmentedReality.html">Acessar câmera</a>
     </article>
-    <br><br>
-    <article>
-      <span>Realidade Aumentada com o uso de Geolocalização (Em Desenvolvimento).</span>
-      <br><br>
-      <a class="btnAugmentedReality" href="augRealityGeoloc.html">Geolocalização</a>
-    </article>
